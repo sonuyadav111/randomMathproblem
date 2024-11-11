@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Math Problem Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Random Math Problem Generator</h2>
+        <p id="problem">16 + 32 = ?</p>
+        <input type="number" id="userAnswer" placeholder="Enter your answer">
+        <button class="button" onclick="checkAnswer()">Check Answer</button>
+        <button class="button" onclick="generateProblem()">Generate New Problem</button>
+        <p id="result">Result: </p>
+        <div class="history">
+            <p><strong>History</strong></p>
+            <div id="history"></div>
+        </div>
+        <button class="button" onclick="clearHistory()">Clear History</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
